@@ -37,3 +37,8 @@ print(f"Hola, mi nombre es {nombre}, tengo {edad} años, mido {altura} metros y 
 # En Python, no es necesario declarar el tipo de variable, ya que el intérprete lo infiere automáticamente.
 
 #==========================================================================================================================#
+
+# En este caso, se utiliza una coma para separar los argumentos de la función print, lo que permite imprimir múltiples valores en una sola línea.
+nombre = "Quimey" # Variable de tipo cadena (str)
+edad = 25 # Variable de tipo entero (int)
+print("hola me llamo", nombre, "y tengo", edad, "años")

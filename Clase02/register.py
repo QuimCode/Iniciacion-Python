@@ -2,7 +2,7 @@
 # almacene estos datos en variables y los muestre organizados en forma de una tarjeta de presentación en la pantalla.
 
 ''' 
-Funcion que se ocupad de tomar el registro de los campos informativos del usuario, como nombre, apellido, edad y correo electronico.
+Funcion que se ocupa de tomar el registro de los campos informativos del usuario, como nombre, apellido, edad y correo electronico.
 El registro se realiza mediante las variable con input, donde se valida que el nombre y apellido contengan solo caracteres alfabeticos, 
 la edad contenga solo valores numericos y el correo electronico contenga @ y .
 '''
@@ -38,11 +38,11 @@ Funcion que se encarga de retomar los datos del usuario, como nombre, apellido, 
 reciebiendo los argumentos de la funcion get_register y mostrando los datos en pantalla en forma de "tarjeta".
 '''
 def show_register(name, last_name, age, email):
-    print("Nombre: ", name)
-    print("Apellido: ", last_name)
-    print("Edad: ", age)
-    print("Email: ", email)
+    print(f"Nombre: {name}")
+    print(f"Apellido: {last_name}")
+    print(f"Edad: {age}")
+    print(f"Email: {email}")
+    print("===========================================================================")
 
 get_register()
-
 
