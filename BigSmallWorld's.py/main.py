@@ -1,6 +1,6 @@
+from register_functions import register
 def main():
-    name = input("¿Cuál es tu nombre? ")
-    print(f"Hola, {name}! Bienvenido a Big Small World!")
+    register()
 
 if __name__ == "__main__":
     main()
