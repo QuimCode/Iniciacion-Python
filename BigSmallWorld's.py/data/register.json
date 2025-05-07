@@ -1,0 +1,50 @@
+{
+    "1": {
+        "name": "Quimey",
+        "age": 25,
+        "gmail": "quim@gmail.com",
+        "password": "2141s5t43A@"
+    },
+    "2": {
+        "name": "Lucia",
+        "age": 22,
+        "gmail": "lucode@gmail.com",
+        "password": "S2416fdg5@"
+    },
+    "3": {
+        "name": "Huilen",
+        "age": 19,
+        "gmail": "hui@gmail.com",
+        "password": "214436dfserh3"
+    },
+    "4": {
+        "name": "Ramon",
+        "age": 23,
+        "gmail": "rami@gmail.com",
+        "password": "fsadasdw232sd"
+    },
+    "5": {
+        "name": "Marina",
+        "age": 28,
+        "gmail": "maru@gmail.com",
+        "password": "adw124df3S"
+    },
+    "6": {
+        "name": "Fede",
+        "age": 32,
+        "gmail": "ferix@gmail.com",
+        "password": "adw23rsdE21"
+    },
+    "7": {
+        "name": "Nancy",
+        "age": 37,
+        "gmail": "nanu@hotmail.com",
+        "password": "dawg2312dwa1"
+    },
+    "8": {
+        "name": "Thiago",
+        "age": 20,
+        "gmail": "thiagus@yahoo.com",
+        "password": "dawfsdf3212das"
+    }
+}
