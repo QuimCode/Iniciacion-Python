@@ -2,6 +2,7 @@
 para realizar la misma tarea. Tambien funciones se definen con la palabra reservada def, seguido del nombre de la funcion y los argumentos 
 que recibe entre parentesis. Por ende las funciones pueden recibir argumentos y devolver valores, lo que permite 
 una mayor flexibilidad y reutilizacion del codigo. '''
+#Cambio
 
 texto= "Hola Mundo"
 def mostrar_mensaje(mensaje):
