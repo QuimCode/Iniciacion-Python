@@ -10,7 +10,7 @@ def menu_products_bsm(user_id):
         1. Load Products
         2. Search Products
         3. Delete Products
-        3. Exit 
+        4. Main Menu
         =============================\n
         Option: """))
 
@@ -22,5 +22,4 @@ def menu_products_bsm(user_id):
             case 3:
                 delete_product()
             case 4:
-                from main import main
-                main()
+                break

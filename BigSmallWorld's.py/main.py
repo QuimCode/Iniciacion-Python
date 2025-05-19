@@ -26,6 +26,7 @@ def main():
                 if user_id:
                     print(f"User ID {user_id} logged in successfully!")
                     menu_products_bsm(user_id)  
+            case 3:
                 break
 
 main()
