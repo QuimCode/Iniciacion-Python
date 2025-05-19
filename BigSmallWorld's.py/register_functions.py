@@ -1,4 +1,4 @@
-from json_dictionary_functions import register_json_data
+from json_dictionary_functions import register_json_userData, open_json_userData
 #=================================================================================
 
 #=================================================================================
@@ -34,7 +34,7 @@ def register():
         Your email is: {gmail}
         Your password is: {password}
         """)
-            register_json_data(name, age, gmail, password)
+            register_json_userData(name, age, gmail, password)
             flag = False
 #=================================================================================
 
@@ -44,8 +44,29 @@ def register():
 #HAY QUE IMPLEMENTAR LA FUNCION DE LOGIN, LUEGO SE PUEDE USAR UN MENU PPARA CARGAR PRODUCTOS, BUSCAR PRODUCTOS, MODIFICAR PRODUCTOS Y ELIMINAR PRODUCTOS
 
 def login():
-    print("Implement login functionality here :P")
-    pass
+    data_user = open_json_userData()
+    if not data_user:
+        print("No users are registered yet.")
+        return None  
+
+    print("""
+    =============================
+    Welcome to Login!
+    =============================
+    """)
+    gmail = input("\tEnter your email: ")
+    password = input("\tEnter your password: ")
+    print("\t=============================")
+
+    for user_id, user_data in data_user.items():
+        if user_data["gmail"] == gmail and user_data["password"] == password:
+            print(f"\nWelcome back, {user_data['name']}!")
+            return user_id  
+
+    print("\nInvalid email or password. Please try again.")
+    return None
+
+
 #=================================================================================
 
 #=================================================================================
@@ -57,13 +78,14 @@ def verificaton_execute(name, age, gmail, password):
 
         if len(name) < 3:
             errors.append("The name must be longer than 3 digits, if it is a short name, complete with your middle name.")
-        if not age.isdigit() or int(age) < 18:
+        if not age.isdigit() or int(age) < 18 or int(age) > 100:
             errors.append("You must be at least 18 years old to register.")
         if (gmail.count("@") != 1) or (gmail.count(".") != 1) or (gmail.index("@") > gmail.index(".")):
             errors.append("Invalid email format. Please enter a valid email address.")
         if not any(char.isdigit() for char in password) or not any(char.isalpha() for char in password) or len(password) < 8:
             errors.append("Password must be at least 8 characters long and contain both letters or numbers'.")
         return errors
+
 #=================================================================================
 
 

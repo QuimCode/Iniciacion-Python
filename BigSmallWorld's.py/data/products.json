@@ -1,0 +1,20 @@
+{
+    "1": {
+        "user_id": "1",
+        "name": "TigerH1",
+        "price": 2.3,
+        "description": "Tank of II World War"
+    },
+    "2": {
+        "user_id": "1",
+        "name": "Churchil Mk3",
+        "price": 5.0,
+        "description": "Tank of II World War"
+    },
+    "3": {
+        "user_id": "2",
+        "name": "Panzer IV",
+        "price": 1.5,
+        "description": "Tank of II World War"
+    }
+}
