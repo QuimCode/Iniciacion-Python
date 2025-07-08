@@ -16,5 +16,11 @@
         "name": "Panzer IV",
         "price": 1.5,
         "description": "Tank of II World War"
+    },
+    "4": {
+        "user_id": "10",
+        "name": "Kark98",
+        "price": 23.0,
+        "description": "Rifle a cerrojo Aleman"
     }
 }
