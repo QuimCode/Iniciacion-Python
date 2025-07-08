@@ -8,22 +8,22 @@ from register_functions import register, login, eliminate_user_app
 console = Console()
 
 def main():
-    """Función principal que muestra el menú de bienvenida y permite al usuario registrarse, iniciar sesión o eliminar su cuenta.
-    Esta función utiliza la biblioteca questionary para interactuar con el usuario y rich para mostrar mensajes en la consola.
-    Si el usuario elige iniciar sesión, se le redirige al menú de productos. Si elige registrarse, se llama a la función de registro o
-    si elige eliminar su cuenta, se llama a la función de eliminación de cuenta.
-    Args:
-        None
-    Returns:
-        None
-    """
+    # """Función principal que muestra el menú de bienvenida y permite al usuario registrarse, iniciar sesión o eliminar su cuenta.
+    # Esta función utiliza la biblioteca questionary para interactuar con el usuario y rich para mostrar mensajes en la consola.
+    # Si el usuario elige iniciar sesión, se le redirige al menú de productos. Si elige registrarse, se llama a la función de registro o
+    # si elige eliminar su cuenta, se llama a la función de eliminación de cuenta.
+    # Args:
+    #     None
+    # Returns:
+    #     None
+    # """
 
     user_id = None
     while True:
         console.print(Panel("[bold cyan]Welcome to BigSmallWorld[/bold cyan]", title="🌍 BigSmallWorld", style="green"))
         option = questionary.select(
             "Choose an option:",
-            choices=["📝 Sign Up", "🔑 Log In", "❌ Eliminate Your Account", "🚪 Exit"]
+            choices=["📝 - Sign Up", "🔑 - Log In", "❌ - Eliminate Your Account", "🚪 - Exit"]
         ).ask()
 
         if option is None:

@@ -9,13 +9,13 @@ from data.database import insert_user, find_user, eliminate_user, modificate_use
 console = Console()
 
 def register():
-    """Permite al usuario registrarse ingresando sus datos personales.
-    Esta función solicita al usuario su nombre, edad, correo electrónico, contraseña y número de teléfono.
-    Valida los datos ingresados y, si son correctos, los guarda en la base de datos.
-    Si hay errores en los datos, se informa al usuario y se le permite volver a intentarlo.
-    Returns:
-        None
-    """
+    # """Permite al usuario registrarse ingresando sus datos personales.
+    # Esta función solicita al usuario su nombre, edad, correo electrónico, contraseña y número de teléfono.
+    # Valida los datos ingresados y, si son correctos, los guarda en la base de datos.
+    # Si hay errores en los datos, se informa al usuario y se le permite volver a intentarlo.
+    # Returns:
+    #     None
+    # """
 
     while True:
         console.print(Panel("[bold cyan]Welcome to Registration![/bold cyan]", title="📝 Register", style="blue"))
@@ -33,7 +33,13 @@ def register():
         if errors:
             error_msg = "\n".join(f"- {e}" for e in errors)
             console.print(Panel(f"[bold red]The following errors were found:[/bold red]\n{error_msg}", style="red"))
-            continue
+            retry = questionary.confirm("Do you want to try registering again?").ask()
+            if retry:
+                continue
+            else:
+                console.print("[bold green]Returning to the main menu...[/bold green]")
+                console.clear()
+                break
         else:
             success = insert_user(name, age, gmail, password, phone)
             if success:
@@ -48,17 +54,14 @@ def register():
                 console.print(Panel(success_msg, title="🎉 Registration Complete", style="green"))
             else:
                 console.print(Panel("[bold red]A user with that name, email, or phone already exists.[/bold red]", style="red"))
+
+            retry = questionary.confirm("Do you want to register another user?").ask()
+            if retry:
                 continue
-
-        return_to_menu = questionary.confirm("Return to main menu?...").ask()
-
-        if return_to_menu:
-            console.print("[bold green]Redirecting to the main menu...[/bold green]")
-            console.clear()
-            break
-        else:
-            console.print("[bold yellow]You chose to stay here. Let's register someone else![/bold yellow]\n")
-            console.print("-" * 50)
+            else:
+                console.print("[bold green]Returning to the main menu...[/bold green]")
+                console.clear()
+                break
 
 #=================================================================================
 
