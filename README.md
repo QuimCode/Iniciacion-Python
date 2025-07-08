@@ -20,8 +20,7 @@ SPANISH & ENGLISH
 
 1. **Clona el repositorio:**
    ```bash
-   git clone https://github.com/tu_usuario/BigSmallWorld.git
-   cd BigSmallWorld
+   git clone https://github.com/QuimCode/Iniciacion-Python.git
    ```
 
 2. **Instala las dependencias:**
@@ -82,8 +81,7 @@ BigSmallWorld's.py/
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/tu_usuario/BigSmallWorld.git
-   cd BigSmallWorld
+   git clone https://github.com/QuimCode/Iniciacion-Python.git
    ```
 
 2. Install the dependencies:
