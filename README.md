@@ -81,20 +81,20 @@ BigSmallWorld's.py/
 ## Installation
 
 1. Clone the repository:
-bash
-git clone https://github.com/your_user/BigSmallWorld.git
-cd BigSmallWorld
-bash
+   ```bash
+   git clone https://github.com/tu_usuario/BigSmallWorld.git
+   cd BigSmallWorld
+   ```
 
 2. Install the dependencies:
-bash
-pip install -r requirements.txt
-bash
+   ```bash
+   pip install -r requirements.txt
+   ```
 
 3. Run the application:
-bash
-python main.py
-bash
+   ```bash
+   python main.py
+   ```
 
 ## Main Dependencies
 
@@ -103,12 +103,13 @@ bash
 
 ## Project Structure
 
-bigsmallworld.py/
+```
+BigSmallWorld's.py/
 │
 ├── data/
-│ ├── database_user.db
-│ ├── database.py
-│ └── ...
+│   ├── database_user.db
+│   ├── database.py
+│   └── ...
 ├── products_functions.py
 ├── register_functions.py
 ├── utilities_menu_bsm.py
