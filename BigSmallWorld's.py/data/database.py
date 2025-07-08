@@ -1,3 +1,4 @@
+import os
 import sqlite3
 
 # Establesco la conexion a la base de datos
@@ -5,7 +6,15 @@ import sqlite3
 # Tambien de paso se ocupa de los productos, incluyendo su ID, nombre, precio, stock, categoria y descripcion.
 
 def get_connection():
-    return sqlite3.connect("BigSmallWorld's.py\data\database_user.db")
+    ''' Establece una conexión a la base de datos SQLite
+    La funcion no recibe parametros, ya que la base de datos se encuentra en el mismo directorio que este script.
+    Devuelve un objeto de conexión a la base de datos, o None si ocurre un error.'''
+    try:
+        db_path = os.path.join(os.path.dirname(__file__), "database_user.db")
+        return sqlite3.connect(db_path)
+    except Exception as e:
+        print(f"Error al conectar con la base de datos: {e}")
+        return None
 
 #=================================================================================
 
