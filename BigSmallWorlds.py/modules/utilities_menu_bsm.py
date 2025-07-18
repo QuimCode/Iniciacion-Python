@@ -3,8 +3,8 @@ import time
 
 from rich.console import Console
 from rich.panel import Panel
-from products_functions import load_product, search_product, view_products, modificate_product_app, stock_products
-from register_functions import modificate_user_app
+from modules.products_functions import load_product, search_product, view_products, modificate_product_app, stock_products
+from modules.register_functions import modificate_user_app
 
 console = Console()
 

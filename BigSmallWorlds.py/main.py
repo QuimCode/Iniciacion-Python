@@ -2,8 +2,8 @@ import questionary
 
 from rich.console import Console
 from rich.panel import Panel
-from utilities_menu_bsm import menu_products_bsm
-from register_functions import register, login, eliminate_user_app
+from modules.utilities_menu_bsm import menu_products_bsm
+from modules.register_functions import register, login, eliminate_user_app
 
 console = Console()
 
